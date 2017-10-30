@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+  bot:
+    build: .
+    command: npm run start
+    depends_on:
+      - db
+    environment:
+      - BOT_TOKEN=
+      - WEBHOOK_URL=
+      - HOST=0.0.0.0
+      - PORT=3000
+      - REJECTION_DELAY=5000
+      - TWITTER_CONSUMER_KEY=
+      - TWITTER_CONSUMER_SECRET=
+      - DATABASE_URL=postgres://postgres@db:5432/postonmyfeed
+      - DATABASE_NAME=postonmyfeed
+      - DATABASE_HOST=db
+    ports:
+      - "4000:3000"

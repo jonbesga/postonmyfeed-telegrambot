@@ -1,0 +1,22 @@
+{
+  "name": "postonmyfeed",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bookshelf": "^0.10.4",
+    "express": "^4.16.2",
+    "knex": "^0.13.0",
+    "node-telegram-bot-api": "^0.29.0",
+    "node-twitter-api": "^1.8.0",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
