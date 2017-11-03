@@ -6,11 +6,6 @@ const model = bookshelf.Model.extend({
   hasTimestamps: true,
 });
 
-// let users = [
-//   {"id":2816783,"requestToken":"XRu6BgAAAAAA1zBOAAABX16llCA","requestTokenSecret":"kBmIMFS1FKfqTFB1AI0hm7YOiDSEKDDB","accessToken":"3555457757-gJMw9ccypPYxqqIZRaAIavmRmS1uIjfyOJ1LPwn","accessTokenSecret":"jQXaHksoiQ55mK05vux0lq46NWLFNZDqOZGnpNQHuhUaq"},
-//   {"id":8173165,"requestToken":"iieZyAAAAAAA1zBOAAABX17FFls","requestTokenSecret":"uiZJglGX6bKtydLvhLzx5D8dpQcx0TmS","accessToken":"24923250-UYYM9Aq020Xyg7wfDxGLTSwR45dEnEDDPCjNrkZEl","accessTokenSecret":"Gy5039cuoNXEbkKtqAXkF0WzKkBrPfczvlPrOjV7tvNxV"}
-// ]
-
 module.exports = {
   model,
   fetchAll: () => model.fetchAll(),
